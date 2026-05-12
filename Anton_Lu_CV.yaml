@@ -1,0 +1,170 @@
+cv:
+  name: Anton Lu
+  headline: "M.Sc. Machine Learning | Dr.-Ing. Candidate, Engineering Physics"
+  location: "Geneva, Switzerland"
+  email: anton@haochen.lu
+  phone: "+41 76 562 56 70"
+  photo: profile.jpg
+  social_networks:
+    - network: LinkedIn
+      username: antolu
+    - network: GitHub
+      username: antolu
+
+  sections:
+    summary:
+      - "Engineering Physicist, Machine Learning Engineer, Software Engineer. Solving complex and interdisciplinary problems that matter. Built on a foundation of Engineering Physics and an M.Sc. in Machine Learning. Designing and training large neural networks across computer vision for fault detection, time series analysis for physics, and language models, deploying them as full-stack, end-to-end production systems. Building and maintaining infrastructure out of personal interest: homelabbing, systems administration, DevOps, and full-stack web development with SSO auth. Delivering self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
+
+    education:
+      - institution: Technische Universität Wien
+        area: Engineering Physics / Applied Physics
+        degree: Doctor of Technical Sciences
+        start_date: 2022-12
+        end_date: 2026-09
+        location: Vienna, Austria
+        highlights:
+          - ML-based modelling of magnetic hysteresis and eddy currents for feed-forward control in CERN synchrotron injectors
+
+      - institution: KTH Royal Institute of Technology
+        area: Engineering Physics, Machine Learning
+        degree: M.Sc.Eng. in Engineering Physics (Civilingenjör), M.Sc. Machine Learning
+        start_date: 2015-08
+        end_date: 2022-08
+        location: Stockholm, Sweden
+        highlights:
+          - 5-year programme in Engineering Physics — B.Sc (2015–2018) followed by M.Sc in Machine Learning (2018–2022)
+          - Major in deep learning and natural language understanding
+
+      - institution: ETH Zürich
+        area: Machine Learning
+        degree: Exchange Semester
+        date: Spring 2020
+        location: Zürich, Switzerland
+        highlights:
+          - Part-time research project — "*Bayesian multi-task learning for low-resource NLP*"
+
+      - institution: École Polytechnique Fédérale de Lausanne (EPFL)
+        area: Engineering Physics
+        degree: Exchange Semester
+        date: Spring 2018
+        location: Lausanne, Switzerland
+        highlights:
+          - 'Bachelor''s thesis at the Laboratory of Intelligent Systems — "*Middleware for transportation drone: communication with the drone*"'
+
+    experience:
+      - company: CERN
+        position: Doctoral Researcher
+        start_date: 2023-02
+        end_date: present
+        location: Geneva, Switzerland
+        highlights:
+          - Modelling magnetic hysteresis and eddy currents with ML for feed-forward control to reduce beam losses in CERN synchrotron injectors
+
+      - company: Swiss Federal Railways, SBB CFF FFS
+        position: Master Thesis Student
+        start_date: 2022-02-01
+        end_date: 2022-08-31
+        location: Bern, Switzerland
+        highlights:
+          - Neural computer vision model development combining conventional image classification CNNs and self-supervised learning for automated defect and anomaly detection in rail joints across the Swiss railway network.
+
+      - company: CERN
+        position: Scientific Computing Intern (Technical Student)
+        start_date: 2020-10-01
+        end_date: 2021-11-30
+        location: Geneva, Switzerland
+        highlights:
+          - PoC project for automating longitudinal phase space tomography in the PS Booster (LHC injector) for real-time continuous beam parameter monitoring and logging in operation and machine development.
+          - Python package development, maintenance and DevOps. See [longitudinal-tomography](https://github.com/phasespacetomography/longitudinal-tomography) project, C++ bindings with pybind11, parallel computing with OpenMP.
+          - Primary toolsets — Python, C++, and CERN frameworks for interfacing in real-time with the accelerator complex.
+
+      - company: KTH Royal Institute of Technology
+        position: Teaching Assistant — Artificial Intelligence
+        start_date: 2019-08
+        end_date: 2023-01
+        location: Stockholm, Sweden
+        highlights:
+          - TA for 5 rounds of the AI course (400–500 students per round)
+          - Oral examinations, moderation of online discussion forums, grading programming assignments in HMMs, search theory, logic/planning, RL. Developing and testing new course assignments in the same subjects
+
+      - company: CERN
+        position: Summer Student
+        start_date: 2019-06-03
+        end_date: 2019-08-31
+        location: Geneva, Switzerland
+        highlights:
+          - Development and implementation of CI/CD pipeline on GitLab for continuous testing and release of LHCb DIRAC grid middleware for distributed computing.
+
+    non_profit_work:
+      - company: The Physics Chapter at KTH (Fysiksektionen)
+        position: President
+        start_date: 2017-01
+        end_date: 2017-12
+        location: Stockholm, Sweden
+        highlights:
+          - President of the board for the engineering physics student union (550 members, $300 000+ annual turnover)
+          - Represented the union in meetings with KTH, the main student union, and external contacts
+
+      # - company: The Physics Chapter at KTH (Fysiksektionen)
+      #   position: Webmaster
+      #   date: "2016"
+      #   location: Stockholm, Sweden
+      #   highlights:
+      #     - Designed and built the chapter website from scratch — [f.kth.se](https://f.kth.se)
+
+    publications:
+      - title: Detecting Defective Rail Joints on the Swiss Railways with Inception ResNet V2
+        authors:
+          - "*Anton Lu*"
+        journal: TODO
+        date: TODO
+        url:
+
+      - title: "Transformers for Deterministic Magnetic Field Control in Particle Accelerators"
+        authors:
+          - "*Anton Lu*"
+        journal: TODO
+        date: TODO
+        url:
+
+      - title: Recent Developments in Longitudinal Phase Space Tomography
+        authors:
+          - "*Anton Lu*"
+        journal: TODO
+        date: TODO
+        url:
+
+      - title: "First Operational Experience with Data-Driven Hysteresis Compensation for the Main Dipole Magnets in the CERN SPS"
+        authors:
+          - "*Anton Lu*"
+        journal: TODO
+        date: TODO
+        url:
+
+    # certifications:
+    #   - bullet: "Course certificate: Management & Leadership"
+    #   - bullet: Certificate of Global Competence
+
+    skills:
+      - label: Programming Languages
+        details: Python, C/C++, Go, Java, Matlab, bash/zsh
+      - label: ML Frameworks
+        details: PyTorch, TensorFlow 2, scikit-learn, Hugging Face
+      - label: Infrastructure
+        details: Docker, GitLab CI/CD, Linux sysadmin, CUDA C / cuBLAS, Kubernetes, Ansible
+      - label: Research Areas
+        details: Deep learning, computer vision, object detection, time series analysis, NLP, self-supervised learning, Bayesian methods
+      - label: Domains
+        details: Particle accelerators, real-time control systems, fault detection, distributed computing, full-stack web development
+
+    languages:
+      - bullet: "**English** — Professional fluency (C2)"
+      - bullet: "**Swedish** — Native"
+      - bullet: "**Chinese (Mandarin)** — Mother tongue"
+      - bullet: "**French** — B2"
+      - bullet: "**Spanish** — B1"
+      - bullet: "**German** — A1"
+      # - bullet: "**Italian** — A1"
+
+design:
+  theme: engineeringresumes

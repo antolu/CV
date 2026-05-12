@@ -1,0 +1,125 @@
+cv:
+  name: Anton Lu
+  headline: "M.Sc. Machine Learning | Dr.-Ing. Candidate, Engineering Physics"
+  location: "Geneva, Switzerland"
+  email: anton@haochen.lu
+  phone: "+41 76 562 56 70"
+  photo: profile.jpg
+  social_networks:
+    - network: LinkedIn
+      username: antolu
+    - network: GitHub
+      username: antolu
+
+  sections:
+    summary:
+      - "**Engineering Physicist, Machine Learning Engineer, Software Engineer.**"
+      - "**Solving complex and interdisciplinary problems that matter.**"
+      - "Building and maintaining infrastructure out of personal interest: homelabbing, systems administration, DevOps, and full-stack web development with SSO auth. Delivering maintainable self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
+      # - "Built on a foundation of Engineering Physics and an M.Sc. in Machine Learning. Designing and training large neural networks across computer vision for fault detection, time series analysis for physics, and language models, deploying them as full-stack, end-to-end production systems. Building and maintaining infrastructure out of personal interest: homelabbing, systems administration, DevOps, and full-stack web development with SSO auth. Delivering self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
+
+    experience:
+      - company: CERN
+        position: Doctoral Research Engineer
+        start_date: 2023-02
+        end_date: present
+        location: Geneva, Switzerland
+        highlights:
+          - Designed and trained sequence models (Transformers, LSTMs) for high-accuracy modelling of magnetic hysteresis and eddy currents in the CERN SPS, enabling feed-forward control to increase machine availability, operational efficiency, and degree of automation.
+          - "Deployed models in real-time into the CERN control system as a full-stack production system, including data pipelines, inference serving, and monitoring. Stack: Python, PyTorch, GitLab CI/CD."
+          - Applied physics-informed ML to incorporate domain knowledge of magnet dynamics into model training and validation.
+
+      - company: Swiss Federal Railways, SBB CFF FFS
+        position: Master Thesis Student
+        start_date: 2022-02-01
+        end_date: 2022-08-31
+        location: Bern, Switzerland
+        highlights:
+          - Neural computer vision model development combining conventional image classification CNNs and self-supervised learning for automated defect and anomaly detection in rail joints across the Swiss railway network.
+
+      - company: CERN
+        position: Scientific Computing Intern (Technical Student)
+        start_date: 2020-10-01
+        end_date: 2021-11-30
+        location: Geneva, Switzerland
+        highlights:
+          - Automated longitudinal phase space tomography in the PS Booster (LHC injector) for real-time beam parameter monitoring, from raw digitizer data acquisition to frontend GUIs.
+          - "Led development of the [longitudinal-tomography](https://github.com/phasespacetomography/longitudinal-tomography) Python package: C++ bindings with pybind11, parallel computing with OpenMP, and full DevOps pipeline."
+
+      - company: KTH Royal Institute of Technology
+        position: AI Teaching Assistant
+        start_date: 2019-08
+        end_date: 2023-01
+        location: Stockholm, Sweden
+        highlights:
+          - Examining TA for 5 rounds of the AI course (500 students/round), conducting oral exams and covering HMMs, search, logic, planning, and reinforcement learning. Developed and graded programming assignments.
+
+      - company: CERN
+        position: Summer Student
+        start_date: 2019-06-03
+        end_date: 2019-08-31
+        location: Geneva, Switzerland
+        highlights:
+          - Built and maintained CI/CD pipeline on GitLab for the LHCb DIRAC distributed computing middleware, automating testing, release, and deployment across a large-scale grid system. Tooling in Docker, bash, and Linux.
+
+    education:
+      - institution: Technische Universität Wien
+        area: Engineering Physics / ML
+        degree: Doctor of Technical Sciences
+        start_date: 2022-12
+        end_date: 2026-09
+        location: Vienna, Austria
+
+      - institution: KTH Royal Institute of Technology
+        area: Engineering Physics, Machine Learning
+        degree: M.Sc.Eng. in Engineering Physics (Civilingenjör), M.Sc. Machine Learning
+        start_date: 2015-08
+        end_date: 2022-08
+        location: Stockholm, Sweden
+
+      - institution: ETH Zürich
+        area: Machine Learning
+        degree: Exchange Semester
+        date: Spring 2020
+        location: Zürich, Switzerland
+        highlights:
+          - Research project on "*Bayesian multi-task learning for low-resource and few-shot NLP*"
+
+      - institution: École Polytechnique Fédérale de Lausanne (EPFL)
+        area: Engineering Physics
+        degree: Exchange Semester
+        date: Spring 2018
+        location: Lausanne, Switzerland
+        highlights:
+          - 'Bachelor''s thesis at the Laboratory of Intelligent Systems: "*Middleware for transportation drone communication*" in C++ (DroneCore/MAVSDK).'
+
+    # certifications:
+    #   - bullet: "Course certificate: Management & Leadership"
+    #   - bullet: Certificate of Global Competence
+
+    skills:
+      - label: Programming Languages
+        details: Python, C/C++, Go, Java, Matlab, bash/zsh
+      - label: ML Frameworks
+        details: PyTorch, TensorFlow 2, scikit-learn, Hugging Face
+      - label: Infrastructure
+        details: Docker, GitLab CI/CD, Linux sysadmin, CUDA C / cuBLAS, Kubernetes, Ansible
+      - label: Research Areas
+        details: Deep learning, computer vision, object detection, time series analysis, NLP, self-supervised learning, Bayesian methods
+      - label: Domains
+        details: Particle accelerators, real-time control systems, fault detection, distributed computing, full-stack web development
+
+    languages:
+      - bullet: "**English** — Professional fluency (C2)"
+      - bullet: "**Swedish** — Native"
+      - bullet: "**Chinese (Mandarin)** — Mother tongue"
+      - bullet: "**French** — B2"
+      - bullet: "**Spanish** — B1"
+      - bullet: "**German** — A1"
+      # - bullet: "**Italian** — A1"
+
+design:
+  theme: classic
+  header:
+    connections:
+      phone_number_format: international
