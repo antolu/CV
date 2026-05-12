@@ -1,10 +1,11 @@
 cv:
   name: Anton Lu
-  headline: "M.Sc. Machine Learning | Dr.-Ing. Candidate, Engineering Physics"
+  headline: "Dr.-Ing. Candidate, Engineering Physics and Machine Learning"
   location: "Geneva, Switzerland"
   email: anton@haochen.lu
   phone: "+41 76 562 56 70"
   photo: profile.jpg
+  website: https://haochen.lu
   social_networks:
     - network: LinkedIn
       username: antolu
@@ -12,10 +13,11 @@ cv:
       username: antolu
 
   sections:
-    summary:
-      - "**Engineering Physicist, Machine Learning Engineer, Software Engineer.**"
-      - "**Solving complex and interdisciplinary problems that matter.**"
-      - "Building and maintaining infrastructure out of personal interest: homelabbing, systems administration, DevOps, and full-stack web development with SSO auth. Delivering maintainable self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
+    about:
+      # - "**Engineering Physicist, Machine Learning Engineer, Software Engineer.**"
+      # - "**Solving complex and interdisciplinary problems that matter.**"
+      - Builds solutions to problems that don't fit into one discipline. ML modelling, systems infrastructure, and full-stack development are tools in the same toolbox, applied across the full lifecycle from domain, modelling to production deployment. Picks up new domains fast and prefers problems that cross disciplinary boundaries.
+      # - "Researching real-world ML solutions (NNs, LLMs, RAG, hybrid IR), building and maintaining infrastructure out of personal interest: systems administration, DevOps, and full-stack web development. Delivering maintainable self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
       # - "Built on a foundation of Engineering Physics and an M.Sc. in Machine Learning. Designing and training large neural networks across computer vision for fault detection, time series analysis for physics, and language models, deploying them as full-stack, end-to-end production systems. Building and maintaining infrastructure out of personal interest: homelabbing, systems administration, DevOps, and full-stack web development with SSO auth. Delivering self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
 
     experience:
@@ -25,17 +27,16 @@ cv:
         end_date: present
         location: Geneva, Switzerland
         highlights:
-          - Designed and trained sequence models (Transformers, LSTMs) for high-accuracy modelling of magnetic hysteresis and eddy currents in the CERN SPS, enabling feed-forward control to increase machine availability, operational efficiency, and degree of automation.
-          - "Deployed models in real-time into the CERN control system as a full-stack production system, including data pipelines, inference serving, and monitoring. Stack: Python, PyTorch, GitLab CI/CD."
-          - Applied physics-informed ML to incorporate domain knowledge of magnet dynamics into model training and validation.
+          - "Designed, trained, and fine-tuned sequence models (**Transformers**, **LSTMs**) for high-accuracy modelling of magnetic hysteresis and eddy currents in the CERN SPS, achieving relative precision of **1×10⁻⁵** for feed-forward control to increase machine availability and operational efficiency."
+          - "Integrated trained models into CERN's accelerator control system for real-time inference, building end-to-end data pipelines and monitoring on top of CERN's internal control infrastructure; **Java**, **Python**, **PyTorch**, **W&B**, **MLflow**, GitLab CI/CD."
 
       - company: Swiss Federal Railways, SBB CFF FFS
-        position: Master Thesis Student
+        position: Machine Learning Engineer (Master Thesis)
         start_date: 2022-02-01
         end_date: 2022-08-31
         location: Bern, Switzerland
         highlights:
-          - Neural computer vision model development combining conventional image classification CNNs and self-supervised learning for automated defect and anomaly detection in rail joints across the Swiss railway network.
+          - "Developed a self-supervised + CNN image classification pipeline for automated defect detection in rail joint images; achieved **77% recall and precision** on sparse, imbalanced data, exceeding human inspector baseline; **TensorFlow 2**."
 
       - company: CERN
         position: Scientific Computing Intern (Technical Student)
@@ -43,16 +44,15 @@ cv:
         end_date: 2021-11-30
         location: Geneva, Switzerland
         highlights:
-          - Automated longitudinal phase space tomography in the PS Booster (LHC injector) for real-time beam parameter monitoring, from raw digitizer data acquisition to frontend GUIs.
-          - "Led development of the [longitudinal-tomography](https://github.com/phasespacetomography/longitudinal-tomography) Python package: C++ bindings with pybind11, parallel computing with OpenMP, and full DevOps pipeline."
+          - "Automated **longitudinal phase space tomography** in the PS Booster for real-time beam performance and stability analysis, from raw digitizer data acquisition to **PyQt** GUIs; led development of the [longitudinal-tomography](https://github.com/phasespacetomography/longitudinal-tomography) **Python package** with **C++/pybind11**, **OpenMP**, and full CI/CD pipeline."
 
-      - company: KTH Royal Institute of Technology
-        position: AI Teaching Assistant
-        start_date: 2019-08
-        end_date: 2023-01
-        location: Stockholm, Sweden
-        highlights:
-          - Examining TA for 5 rounds of the AI course (500 students/round), conducting oral exams and covering HMMs, search, logic, planning, and reinforcement learning. Developed and graded programming assignments.
+      # - company: KTH Royal Institute of Technology
+      #   position: AI Teaching Assistant
+      #   start_date: 2019-08
+      #   end_date: 2023-01
+      #   location: Stockholm, Sweden
+      #   highlights:
+      #     - Examining TA for 5 rounds of the AI course (500 students/round), conducting oral exams and covering HMMs, search, logic, planning, and reinforcement learning. Developed and graded programming assignments.
 
       - company: CERN
         position: Summer Student
@@ -60,38 +60,31 @@ cv:
         end_date: 2019-08-31
         location: Geneva, Switzerland
         highlights:
-          - Built and maintained CI/CD pipeline on GitLab for the LHCb DIRAC distributed computing middleware, automating testing, release, and deployment across a large-scale grid system. Tooling in Docker, bash, and Linux.
+          - "Built CI/CD pipeline from scratch on GitLab for the LHCb DIRAC distributed computing middleware, automating testing and release to eliminate manual deployment overhead across a large-scale grid system. Stack: Docker, bash, Linux."
 
     education:
-      - institution: Technische Universität Wien
-        area: Engineering Physics / ML
+      - institution: TU Wien
+        area: Engineering Physics / Machine Learning
         degree: Doctor of Technical Sciences
         start_date: 2022-12
         end_date: 2026-09
         location: Vienna, Austria
 
       - institution: KTH Royal Institute of Technology
-        area: Engineering Physics, Machine Learning
-        degree: M.Sc.Eng. in Engineering Physics (Civilingenjör), M.Sc. Machine Learning
+        area: Engineering Physics, M.Sc. Machine Learning
+        degree: M.Sc.Eng.
         start_date: 2015-08
         end_date: 2022-08
         location: Stockholm, Sweden
-
-      - institution: ETH Zürich
-        area: Machine Learning
-        degree: Exchange Semester
-        date: Spring 2020
-        location: Zürich, Switzerland
         highlights:
-          - Research project on "*Bayesian multi-task learning for low-resource and few-shot NLP*"
+          - "**Exchange at ETH Zürich** (Spring 2020): Bayesian multi-task learning for low-resource, few-shot NLP"
+          - '**Exchange at EPFL** (Spring 2018): B.Sc. thesis at the Laboratory of Intelligent Systems: "*Middleware for transportation drone communication*" in C++ (DroneCore/MAVSDK).'
 
-      - institution: École Polytechnique Fédérale de Lausanne (EPFL)
-        area: Engineering Physics
-        degree: Exchange Semester
-        date: Spring 2018
-        location: Lausanne, Switzerland
+    projects:
+      - name: Hybrid Information Retrieval System
+        summary: "On-premise, privacy-first document retrieval system for sensitive data environments"
         highlights:
-          - 'Bachelor''s thesis at the Laboratory of Intelligent Systems: "*Middleware for transportation drone communication*" in C++ (DroneCore/MAVSDK).'
+          - "Fully air-gapped deployment on Kubernetes with **vLLM**-served Qwen 3.5, hybrid sparse **Elasticsearch** + dense **Qdrant** retrieval with reranking, **FastAPI** backend, **PostgreSQL**, and **React** frontend + SSO where no data leaves the infrastructure."
 
     # certifications:
     #   - bullet: "Course certificate: Management & Leadership"
@@ -99,27 +92,30 @@ cv:
 
     skills:
       - label: Programming Languages
-        details: Python, C/C++, Go, Java, Matlab, bash/zsh
-      - label: ML Frameworks
-        details: PyTorch, TensorFlow 2, scikit-learn, Hugging Face
+        details: Python, C/C++, Java, JS, SQL, bash/zsh
+      - label: ML
+        details: "PyTorch (Lightning), JAX, TF2; deep learning / Transformers, LLMs, RAG/IR, CV, NLP, time series, Bayesian methods"
       - label: Infrastructure
-        details: Docker, GitLab CI/CD, Linux sysadmin, CUDA C / cuBLAS, Kubernetes, Ansible
-      - label: Research Areas
-        details: Deep learning, computer vision, object detection, time series analysis, NLP, self-supervised learning, Bayesian methods
-      - label: Domains
-        details: Particle accelerators, real-time control systems, fault detection, distributed computing, full-stack web development
-
-    languages:
-      - bullet: "**English** — Professional fluency (C2)"
-      - bullet: "**Swedish** — Native"
-      - bullet: "**Chinese (Mandarin)** — Mother tongue"
-      - bullet: "**French** — B2"
-      - bullet: "**Spanish** — B1"
-      - bullet: "**German** — A1"
-      # - bullet: "**Italian** — A1"
+        details: Docker, Kubernetes, GitLab CI/CD, GitHub Workflows, Terraform, Linux sysadmin
+      - label: Languages
+        details: "English (C2), Swedish (native), Chinese/Mandarin (native), French (B2), Spanish (B1)"
 
 design:
-  theme: classic
+  theme: engineeringresumes
+  page:
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  typography:
+    line_spacing: 0.55em
+    font_size:
+      body: 9.5pt
+  section_titles:
+    space_above: 0.45cm
+    space_below: 0.25cm
+  sections:
+    space_between_regular_entries: 0.4cm
   header:
     connections:
       phone_number_format: international
