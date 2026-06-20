@@ -84,7 +84,7 @@ cv:
       - name: Hybrid Information Retrieval System
         summary: "On-premise, privacy-first document retrieval system for sensitive data environments"
         highlights:
-          - "Fully air-gapped deployment on Kubernetes with **vLLM**-served Qwen 3.5, hybrid sparse **Elasticsearch** + dense **Qdrant** retrieval with reranking, **FastAPI** backend, **PostgreSQL**, and **React** frontend + SSO where no data leaves the infrastructure."
+          - "Fully air-gapped deployment on **K8S** with **vLLM**-served Qwen 3.5 or Gemma 4, hybrid sparse **Elasticsearch** + dense **Qdrant** retrieval with reranking, **FastAPI** backend, **PostgreSQL**, and **React** frontend + SSO where no data leaves the infrastructure."
 
     # certifications:
     #   - bullet: "Course certificate: Management & Leadership"
@@ -92,18 +92,18 @@ cv:
 
     skills:
       - label: Programming Languages
-        details: Python, C/C++, Java, JS, SQL, bash/zsh
+        details: Python, Java, C/C++, JS/TS, SQL, bash/zsh
       - label: ML
         details: "PyTorch (Lightning), JAX, TF2; deep learning / Transformers, LLMs, RAG/IR, CV, NLP, time series, Bayesian methods"
       - label: Infrastructure
-        details: Docker, Kubernetes, GitLab CI/CD, GitHub Workflows, Terraform, Linux sysadmin
+        details: Docker (Compose), Kubernetes, GitLab CI/CD, GitHub Workflows, Terraform, Linux sysadmin
       - label: Languages
         details: "English (C2), Swedish (native), Chinese/Mandarin (native), French (B2), Spanish (B1)"
 
 design:
   theme: engineeringresumes
   page:
-    top_margin: 0.5in
+    top_margin: 0.6in
     bottom_margin: 0.5in
     left_margin: 0.6in
     right_margin: 0.6in
