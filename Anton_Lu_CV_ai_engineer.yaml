@@ -1,0 +1,121 @@
+cv:
+  name: Anton Lu
+  headline: "Machine Learning Engineer | Dr.-Ing. Candidate, Engineering Physics"
+  location: "Geneva, Switzerland"
+  email: anton@haochen.lu
+  phone: "+41 76 562 56 70"
+  photo: profile.jpg
+  website: https://haochen.lu
+  social_networks:
+    - network: LinkedIn
+      username: antolu
+    - network: GitHub
+      username: antolu
+
+  sections:
+    about:
+      # - "**Engineering Physicist, Machine Learning Engineer, Software Engineer.**"
+      # - "**Solving complex and interdisciplinary problems that matter.**"
+      - Builds solutions to problems that don't fit into one discipline. ML modelling, systems infrastructure, and full-stack development are tools in the same toolbox, applied across the full lifecycle from domain, modelling to production deployment. Picks up new domains fast and prefers problems that cross disciplinary boundaries.
+      # - "Researching real-world ML solutions (NNs, LLMs, RAG, hybrid IR), building and maintaining infrastructure out of personal interest: systems administration, DevOps, and full-stack web development. Delivering maintainable self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
+      # - "Built on a foundation of Engineering Physics and an M.Sc. in Machine Learning. Designing and training large neural networks across computer vision for fault detection, time series analysis for physics, and language models, deploying them as full-stack, end-to-end production systems. Building and maintaining infrastructure out of personal interest: homelabbing, systems administration, DevOps, and full-stack web development with SSO auth. Delivering self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
+
+    projects:
+      - name: "Harmony: On-Premise Agentic Information Retrieval"
+        summary: "Privacy-first, containerized, on-premise LLM knowledge assistant, from data ingestion to hybrid search and multi-agent refinement loops"
+        highlights:
+          - "Designed a **multi-agent pipeline** with K-round refinement: planner, parallel searchers, synthesizer, and a critic agent that triggers another round if the answer is weak. Validated answer quality through manual testing against known-answer queries."
+          - "Built the underlying retrieval infrastructure: hybrid **Elasticsearch** (keyword) + **Qdrant** (semantic/vector) search with optional reranking, models served locally via containerized **vLLM**/**Ollama** or routed to remote providers through **LiteLLM**."
+          - "Exposed search and tool access to agents via **MCP** server connectors, and ingested external sources through custom **Scrapy** crawlers and document parsers with incremental re-indexing."
+          - "Secured the multi-user platform with **Keycloak**-backed OIDC SSO, role-based **ACL** for authorization, and a dedicated **audit log** of user actions, and each user gets isolated conversation history and model selection."
+          - "Shipped as a containerized, multi-service system (**FastAPI**, **PostgreSQL**, **Redis**, **React** frontend), deployed on **Minikube**, with CI-tested coverage and Alembic-managed schema migrations; [github.com/antolu/harmony](https://github.com/antolu/harmony)."
+
+      - name: "Dragonglass: Agentic Search over Obsidian Note Vaults"
+        summary: "Local-first agentic retrieval assistant for personal knowledge bases"
+        highlights:
+          - "Implemented an MCP-native agent loop (**FastMCP**, async WebSocket/SSE) combining sparse keyword and dense vector search over an Note vault, with a companion TypeScript Obsidian plugin serving as the embedding and retrieval backend."
+          - "Provider-agnostic LLM routing (local small **Ollama** models or cloud APIs) and exposed the agent as CLI, TUI, and **native macOS app** frontends; [github.com/antolu/dragonglass](https://github.com/antolu/dragonglass)."
+
+    experience:
+      - company: CERN
+        position: Doctoral Research Engineer
+        start_date: 2023-02
+        end_date: present
+        location: Geneva, Switzerland
+        summary: "Designed, trained, and fine-tuned sequence models (**Transformers**, **LSTMs**) for high-accuracy modelling of magnetic hysteresis and eddy currents in the CERN SPS, achieving relative precision of **1×10⁻⁵** for feed-forward control; integrated trained models into the accelerator control system stack forcycle-by-cycle, building end-to-end data pipelines and monitoring with **Java**, **Python**, **PyTorch**, **W&B**, **MLflow**, GitLab CI/CD."
+        highlights:
+          - "Integrated with **LSA** and middleware for multiplexed settings and acquisition, and used **UCAP** for containerized real-time inference and testing; actively contributed to the development of **PyDA** and **NXCALS** through hands-on feedback and bug reports, with brief hands-on experience with **FESA** for real-time communication to SPS mains FGCs."
+          - "Packaged and deployed my models and tools as typed, linted, and tested Python packages on **Acc-Py** (including on the TN), built for reusability and long-term maintainability; separately developed section-wide Python DevOps tooling adopted by others, including prototyping **Renovate** for automated dependency management across the Acc-Py pipeline."
+          - "Designed, built, and deployed a [shuttle timetable web application](https://mobility.app.cern.ch) on **CERN OpenShift**, a publicly-exposed internal service, in collaboration with CERN's site infrastructure (campus mobility) team, end-to-end from infrastructure to frontend."
+
+      - company: Swiss Federal Railways, SBB CFF FFS
+        position: Machine Learning Engineer (Master Thesis)
+        start_date: 2022-02-01
+        end_date: 2022-08-31
+        location: Bern, Switzerland
+        summary: "Developed a self-supervised + CNN image classification pipeline for automated defect detection in rail joint images; achieved **77% recall and precision** on sparse, imbalanced data, exceeding human inspector baseline; **TensorFlow 2**."
+
+      - company: CERN
+        position: Scientific Computing Intern (Technical Student)
+        start_date: 2020-10-01
+        end_date: 2021-11-30
+        location: Geneva, Switzerland
+        summary: "Automated **longitudinal phase space tomography** in the PS Booster for real-time beam performance and stability analysis, from raw digitizer data acquisition to **PyQt** GUIs; led development of the [longitudinal-tomography](https://github.com/phasespacetomography/longitudinal-tomography) **Python package** with **C++/pybind11**, **OpenMP**, and full CI/CD pipeline."
+        highlights:
+          - "Developed **FESA** composite class with **OASIS**, deployed processing on **UCAP**, and frontend in acc-widgets PyQt app for the CCC."
+
+      # - company: KTH Royal Institute of Technology
+      #   position: AI Teaching Assistant
+      #   start_date: 2019-08
+      #   end_date: 2023-01
+      #   location: Stockholm, Sweden
+      #   highlights:
+      #     - Examining TA for 5 rounds of the AI course (500 students/round), conducting oral exams and covering HMMs, search, logic, planning, and reinforcement learning. Developed and graded programming assignments.
+
+      - company: CERN
+        position: Summer Student
+        start_date: 2019-06-03
+        end_date: 2019-08-31
+        location: Geneva, Switzerland
+        highlights:
+          - "Built **CI/CD pipeline** from scratch on GitLab for integration testing and deployment for the **LHCb DIRAC** distributed computing middleware, automating testing and release to eliminate manual deployment overhead across a large-scale grid system. Stack: **Docker**, bash, Python, **Linux**."
+
+    education:
+      - institution: TU Wien
+        area: Engineering Physics / Machine Learning
+        degree: Doctor of Technical Sciences
+        start_date: 2022-12
+        end_date: 2026-09
+        location: Vienna, Austria
+
+      - institution: KTH Royal Institute of Technology
+        area: Engineering Physics, M.Sc. Machine Learning
+        degree: M.Sc.Eng.
+        start_date: 2015-08
+        end_date: 2022-08
+        location: Stockholm, Sweden
+        highlights:
+          - "**Exchange at ETH Zürich** (Spring 2020): Bayesian multi-task learning for low-resource, few-shot NLP"
+          - '**Exchange at EPFL** (Spring 2018): B.Sc. thesis at the Laboratory of Intelligent Systems: "*Middleware for transportation drone communication*" in C++ (DroneCore/MAVSDK).'
+
+    # certifications:
+    #   - bullet: "Course certificate: Management & Leadership"
+    #   - bullet: Certificate of Global Competence
+
+    skills:
+      - label: Programming Languages
+        details: Python, Java, C/C++, JS/TS, SQL, bash/zsh
+      - label: LLM / Agentic AI
+        details: "LiteLLM, MCP, RAG pipelines, hybrid sparse/dense retrieval, reranking, multi-agent orchestration, vLLM/Ollama local serving, LangChain-style tool calling"
+      - label: ML
+        details: "PyTorch (Lightning), JAX, TF2; deep learning / Transformers, LLMs, CV, NLP, time series, Bayesian methods"
+      - label: Infrastructure
+        details: "Docker (Compose) + orchestration, GitLab CI/CD, GitHub Workflows, Terraform, Linux sysadmin"
+      - label: Languages
+        details: "English (C2), Swedish (native), Chinese/Mandarin (native), French (B2), Spanish (B1)"
+
+design:
+  theme: engineeringresumes
+  header:
+    connections:
+      phone_number_format: international

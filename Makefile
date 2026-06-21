@@ -1,6 +1,7 @@
 DOCKER = docker run --rm -v "$$PWD":/work -u $$(id -u):$$(id -g) -e HOME=/tmp -w /work ghcr.io/rendercv/rendercv
 DOCKER_MAIN = $(DOCKER) render Anton_Lu_CV.yaml
 DOCKER_INDUSTRY = $(DOCKER) render Anton_Lu_CV_industry.yaml --pdf-path rendercv_output/Anton_Lu_CV_industry.pdf
+DOCKER_AI_ENGINEER = $(DOCKER) render Anton_Lu_CV_ai_engineer.yaml --pdf-path rendercv_output/Anton_Lu_CV_ai_engineer.pdf
 
 all:
 	$(DOCKER_MAIN)
@@ -23,7 +24,13 @@ industry:
 industry-all:
 	$(DOCKER_INDUSTRY)
 
+ai_engineer:
+	$(DOCKER_AI_ENGINEER) --dont-generate-html --dont-generate-markdown --dont-generate-png
+
+ai_engineer-all:
+	$(DOCKER_AI_ENGINEER)
+
 clean:
 	rm -rf rendercv_output
 
-.PHONY: all pdf png html markdown industry industry-all clean
+.PHONY: all pdf png html markdown industry industry-all ai_engineer ai_engineer-all clean
