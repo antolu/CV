@@ -16,7 +16,7 @@ cv:
     about:
       # - "**Engineering Physicist, Machine Learning Engineer, Software Engineer.**"
       # - "**Solving complex and interdisciplinary problems that matter.**"
-      - Builds solutions to problems that don't fit into one discipline. ML modelling, systems infrastructure, and full-stack development are tools in the same toolbox, applied across the full lifecycle from domain, modelling to production deployment. Picks up new domains fast and prefers problems that cross disciplinary boundaries.
+      - I build solutions to problems that don't fit into one discipline. ML modelling, systems infrastructure, and full-stack development are tools in the same toolbox, applied across the full lifecycle from domain, modelling to production deployment. I pick up new domains fast and prefer problems that cross disciplinary boundaries.
       # - "Researching real-world ML solutions (NNs, LLMs, RAG, hybrid IR), building and maintaining infrastructure out of personal interest: systems administration, DevOps, and full-stack web development. Delivering maintainable self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
       # - "Built on a foundation of Engineering Physics and an M.Sc. in Machine Learning. Designing and training large neural networks across computer vision for fault detection, time series analysis for physics, and language models, deploying them as full-stack, end-to-end production systems. Building and maintaining infrastructure out of personal interest: homelabbing, systems administration, DevOps, and full-stack web development with SSO auth. Delivering self-contained solutions across disciplines, from prototype to production. Eager to learn, and picking up new fields fast when the problem demands it."
 
@@ -41,11 +41,11 @@ cv:
         start_date: 2023-02
         end_date: present
         location: Geneva, Switzerland
-        summary: "Designed, trained, and fine-tuned sequence models (**Transformers**, **LSTMs**) for high-accuracy modelling of magnetic hysteresis and eddy currents in the CERN SPS, achieving relative precision of **1×10⁻⁵** for feed-forward control; integrated trained models into the accelerator control system stack forcycle-by-cycle, building end-to-end data pipelines and monitoring with **Java**, **Python**, **PyTorch**, **W&B**, **MLflow**, GitLab CI/CD."
+        summary: "Designed, trained, and fine-tuned sequence models (**Transformers**, **LSTMs**) for high-accuracy modelling of magnetic hysteresis and eddy currents in the CERN SPS with experts from across ATS, achieving relative precision of **1×10⁻⁵** for feed-forward control; integrated trained models into the accelerator control system stack for cycle-by-cycle corrections, building end-to-end data pipelines and monitoring with **Java**, **Python**, **PyTorch**, **W&B**, **MLflow**, GitLab CI/CD."
         highlights:
           - "Integrated with **LSA** and middleware for multiplexed settings and acquisition, and used **UCAP** for containerized real-time inference and testing; actively contributed to the development of **PyDA** and **NXCALS** through hands-on feedback and bug reports, with brief hands-on experience with **FESA** for real-time communication to SPS mains FGCs."
           - "Packaged and deployed my models and tools as typed, linted, and tested Python packages on **Acc-Py** (including on the TN), built for reusability and long-term maintainability. Separately developed section-wide Python DevOps tooling adopted by others, including prototyping **Renovate** for automated dependency management across the Acc-Py pipeline."
-          - "Designed, built, and deployed a [shuttle timetable web application](https://mobility.app.cern.ch) on **CERN OpenShift**, a publicly-exposed internal service, in collaboration with CERN's site infrastructure (campus mobility) team, end-to-end from infrastructure to frontend."
+          - "Designed, built, and deployed a prototype [mobility web application](https://mobility.app.cern.ch) on CERN **OpenShift**, a publicly-exposed internal service, with CERN's SCE campus mobility team."
 
       - company: Swiss Federal Railways, SBB CFF FFS
         position: Machine Learning Engineer (Master Thesis)
@@ -112,6 +112,8 @@ cv:
         details: "Docker (Compose) + orchestration, GitLab CI/CD, GitHub Workflows, Terraform, Linux sysadmin"
       - label: Languages
         details: "English (C2), Swedish (native), Chinese/Mandarin (native), French (B2), Spanish (B1)"
+      - label: Coffee
+        details: Espresso, Cold Brew, Aerocano, V60, French Press
 
 design:
   theme: engineeringresumes
