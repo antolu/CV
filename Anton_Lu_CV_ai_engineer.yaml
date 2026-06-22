@@ -28,7 +28,7 @@ cv:
           - "Built the underlying retrieval infrastructure with hybrid **Elasticsearch** (keyword) + **Qdrant** (semantic/vector) search with reranking, models served locally via containerized **vLLM**/**Ollama** or routed to remote providers."
           - "Exposed search and tool access to agents via **MCP** server connectors, and ingested external sources through pluggable data connectors such as **Scrapy** crawlers, filesystem readers, and document parsers, with incremental re-indexing."
           - "Secured the multi-user spolution with **Keycloak**-backed OIDC SSO, role-based **ACL** for authorization, and a dedicated **audit log** of user actions, and each user gets isolated conversation history and model selection."
-          - "Shipped as a containerized, multi-service system (**FastAPI**, **PostgreSQL**, **Redis**, **React** frontend), deployed on **Minikube**, with CI-tested coverage and Alembic-managed schema migrations; [github.com/antolu/harmony](https://github.com/antolu/harmony)."
+          - "Shipped as a containerized, multi-service system (**FastAPI**, **PostgreSQL**, **Redis**, **React** frontend), deployed on **K3S**, with CI-tested coverage and Alembic-managed schema migrations; [github.com/antolu/harmony](https://github.com/antolu/harmony)."
 
       - name: "Dragonglass: Agentic Search over Obsidian Note Vaults"
         summary: "Local-first, provider-agnostic agentic retrieval assistant for personal knowledge bases, running on small local models such as **Qwen 9B**; [github.com/antolu/dragonglass](https://github.com/antolu/dragonglass)"
